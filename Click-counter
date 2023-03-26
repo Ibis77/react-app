@@ -1,6 +1,6 @@
 //  Step 0: Download, install and configure your code editor (I use Visual Studio Code).
 
-//  Step 1: Create React app in your code editor terminal.
+//  Step 1: Create React app in your code editor terminal; wait for dependencies to be installed.
 npx create-react-app click-counter
 
 //  Step 2: Go to App.js and proceed to replace the default code with your own.
