@@ -1,0 +1,60 @@
+//  Step 0: Download, install and configure your code editor (I use Visual Studio Code).
+
+//  Step 1: Create React app in your code editor terminal.
+npx create-react-app click-counter
+
+//  Step 2: Go to App.js and proceed to replace the default code with your own.
+
+//  Step 3: Import useState hook - a hook that enables a default State and making changes to it with action.
+import { useState } from 'react';
+
+//  Step 4: Create a function called App.
+function App() {
+
+};
+
+//  Step 5: Insert two (2) values - count and setCount, as initial State and State changing function; set initial count to 0.
+const [count, setCount] = useState(0);
+
+//  Step 6: Create handleClick function to allow setCount value to add 1 to count, each time a Click event happens.
+const handleClick = () => {
+  setCount(count + 1);
+};
+
+//  Step 7: Create return to include HTML elements inside a div.
+return (
+  <div>
+  
+  </div>
+)
+
+//  Step 8: Insert title within return.
+<h1>Click Counter</h1>
+
+//  Step 9: Insert description, including a dynamic counter in the form of {count}.
+<p> You have clicked the button {count} times.</p>
+
+//  Step 10: Insert button with "Click me" text, which when clicked ("onClick"), activates handleClick function, in the form of onclick={handleClick}.
+<button onClick={handleClick}>Click me</button>
+
+//  Step 11: Export the App in default.
+export default App;
+
+//  FULL CODE:
+function App() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h1>Click Counter</h1>
+      <p>You have clicked the button {count} times.</p>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
+}
+
+export default App;
